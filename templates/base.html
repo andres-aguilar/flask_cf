@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title> Flask - {% block Title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 <h1> Plantilla base </h1>
 
 {% block Content %}
 {% endblock %}
+
+<script type="text/javascript" href="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
