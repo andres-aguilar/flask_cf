@@ -3,3 +3,8 @@
     <p> {{i}}.- {{mensaje}}</p>
   {% endfor %}
 {% endmacro %}
+
+{% macro render_field(field) %}
+  <td> {{ field.label }} </td>
+  <dd> {{ field(**kwargs)|safe }} </dd>
+{% endmacro %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block Title %} Ejemplo de formulario {% endblock %}
+
+{% block Content %}
+  {% from "_macro.html" import render_field %}
+  <form>
+      <p> {{ render_field(form.user) }} </p>
+      <p> {{ render_field(form.email) }} </p>
+      <p> {{ render_field(form.comentario) }} </p>
+  </form>
+{% endblock %}
