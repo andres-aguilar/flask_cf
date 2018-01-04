@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block Title %} Ejemplo de herencia {% endblock %}
+
+{% block Content %}
+  <h3> Numeros en la lista: </h3>
+  {% for numero in lista %}
+    <p> {{numero}} </p>
+  {% endfor %}
+{% endblock %}
