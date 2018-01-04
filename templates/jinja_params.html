@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+</head>
+<body>
+<h1> Paso de parametros a Jinja2 </h1>
+
+<p> {{nombre}} </p>
+<p> {{edad}} :
+ {% if edad > 18 %}
+    mayor de edad
+ {% endif %}
+</p>
+
+
+{% for numero in lista %}
+ <p> {{numero}} </p>
+{% endfor %}
+</body>
+</html>
